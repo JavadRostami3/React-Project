@@ -1,0 +1,39 @@
+@font-face {
+    font-family: "vazir";
+    src: url("../fonts/vazir/Vazir-FD-WOL.woff") format("woff2"),
+        url("../fonts/vazir/Vazir-FD-WOL.woff") format("woff"),
+        url("../fonts/vazir/Vazir-FD-WOL.ttf") format("truetype");
+}
+
+
+:root {
+    /* Adjusting hue and saturation */
+    --hue: 120;
+    /* Green */
+    --sat: 60%;
+    /* Higher saturation for a more vibrant color */
+
+    /* Primary color */
+    --primary-color: hsl(var(--hue), var(--sat), 45%);
+    --primary-color-light: hsl(var(--hue), var(--sat), 75%);
+    --primary-color-lighten: hsl(var(--hue), var(--sat), 70%);
+
+    /* Secondary color */
+    --secondary-color: hsl(var(--hue), 45%, 50%);
+
+    /* Title and text colors */
+    --title-color: hsl(var(--hue), 10%, 20%);
+    /* Dark color for titles */
+    --text-color: hsl(var(--hue), 10%, 40%);
+    /* Main text color */
+    --text-color-light: hsl(var(--hue), 10%, 60%);
+    /* Lighter text color for less important text */
+
+    /* Background and container colors */
+    --body-color: hsl(var(--hue), 0%, 98%);
+    /* Light background color */
+    --container-color: #f4f4f4;
+    /* Soft light color for container background */
+
+    --ff-primary: "vazir", sans-serif;
+}

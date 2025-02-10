@@ -1,0 +1,138 @@
+@media screen and (min-width:576px) {
+    .svg__img {
+        width: 100%;
+    }
+
+    .home {
+        padding-top: 7rem !important;
+    }
+
+    .home__container {
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+
+    .home__image {
+        order: 1;
+    }
+
+    .about__container,
+    .support__container,
+    .app__container,
+    .contact__container {
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+
+    .footer__container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about__image,
+    .app__img {
+        order: -1;
+    }
+
+    .about__info,
+    .support__info,
+    .contact__description {
+        text-align: right;
+    }
+
+    .services_container {
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+
+    .app__title {
+        text-align: right !important;
+
+        h2 {
+            text-align: right !important;
+        }
+    }
+}
+
+.contact__title {
+    text-align: right !important;
+}
+
+@media screen and (min-width: 800px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    h3 {
+        font-size: 1.75rem;
+    }
+
+    h4 {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 767px) {
+    .nav__list {
+        display: flex;
+        flex-direction: row !important;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+
+    .nav__toggle {
+        display: none;
+    }
+    .change-theme{
+        position: unset;
+    }
+}
+
+@media screen and (min-width:929px) {
+    .container {
+        width: 95vw;
+    }
+
+    .svg__img {
+        width: 500px;
+    }
+
+
+    .button__header {
+        display: block !important;
+        padding: 0.5rem 1.5rem;
+    }
+
+    .home__container,
+    .about__container,
+    .support__container,
+    .app__container {
+        column-gap: 6rem;
+    }
+
+    .services_container {
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+    }
+
+    .contact__container {
+        grid-template-columns: 3fr 1.5fr 1.25fr;
+    }
+
+    .footer {
+        &__container {
+            grid-template-columns: repeat(5, 1fr);
+        }
+
+        &__social {
+            &-link {
+                font-size: 1.4rem;
+            }
+        }
+    }
+
+
+}
