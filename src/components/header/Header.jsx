@@ -20,11 +20,12 @@ const navLinks = [
                   <a className="nav__link" href={`#${link.id}`}>{link.label}</a>
                 </li>
               ))}
-              <i className="change-theme bi bi-toggle-off" id="theme-button"></i>
+                <ThemeToggle />
+{/*               <i className="change-theme bi bi-toggle-off" id="theme-button"></i> */}
             </ul>
           </div>
   
-          <ThemeToggle />
+          
   
           <a className="button button__header" href="#">لورم ایپسوم</a>
         </nav>
