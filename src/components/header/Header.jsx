@@ -1,5 +1,4 @@
 import ThemeToggle from "../scripts/ThemeToggle";
-
 const navLinks = [
     { id: "home", label: "صفحه اصلی" },
     { id: "about", label: "درباره ما" },
@@ -20,11 +19,14 @@ const navLinks = [
                   <a className="nav__link" href={`#${link.id}`}>{link.label}</a>
                 </li>
               ))}
-              <i className="change-theme bi bi-toggle-off" id="theme-button"></i>
+              {/* <i className="change-theme bi bi-toggle-off" id="theme-button"></i> */}
+              <ThemeToggle />
             </ul>
           </div>
   
-          <ThemeToggle />
+          <div className="nav__toggle" id="nav-toggle">
+            <i className="bi bi-list-nested"></i>
+          </div>
   
           <a className="button button__header" href="#">لورم ایپسوم</a>
         </nav>
