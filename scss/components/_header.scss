@@ -1,0 +1,78 @@
+.header {
+    position: fixed;
+    width: 100%;
+    background: var(--body-color);
+    top: 0;
+    left: 0;
+    padding: 0.75rem 0;
+    transition: 0.5s;
+
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &__logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        &__toggle {
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        &__menu {
+            @media screen and (max-width: 767px) {
+                position: fixed;
+                // top: 4rem;
+                top: -100%;
+                left: 0;
+                right: 0;
+                background: var(--container-color);
+                box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+                width: 90%;
+                margin: 0 auto;
+                border-radius: 2rem;
+                padding: 2.5rem 0;
+                transition: 0.4s;
+            }
+        }
+
+        &__list {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        &__link,
+        &__logo,
+        &__toggle {
+            color: var(--title-color);
+        }
+    }
+}
+
+.active-link {
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 5px;
+        height: 5px;
+        bottom: -0.75rem;
+        left: 45%;
+        border-radius: 50%;
+        background: var(--title-color);
+    }
+}
+
+.show-menu {
+    top: 4rem !important;
+}
+
+.scroll-header {
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+}

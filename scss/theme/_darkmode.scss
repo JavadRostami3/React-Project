@@ -1,0 +1,15 @@
+body.dark-theme {
+    --primary-color-light: hsl(var(--hue), var(--sat), 75%);
+    --title-color: hsl(var(--hue), 4%, 95%);
+    --text-color: hsl(var(--hue), 4%, 80%);
+    --body-color: hsl(var(--hue), 8%, 13%);
+    --container-color: hsl(var(--hue), 8%, 16%);
+}
+.change-theme{
+    position: absolute;
+    right: 1.5rem;
+    top: 2.1rem;
+    color: var(--title-color);
+    font-size: 1.7rem;
+    cursor: pointer;
+}

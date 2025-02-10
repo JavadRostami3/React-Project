@@ -1,0 +1,22 @@
+.scrollup{
+    position: fixed;
+    background: var(--primary-color);
+    right: 2rem;
+    bottom: -20%;
+    padding: 0.5rem 0.5rem 0.3rem 0.5rem;
+    border-radius: 0.25rem;
+    opacity: 0.8;
+    transition: 0.4s;
+
+    &:hover{
+        opacity: 1;
+    }
+
+    &__icon{
+        font-size: 1.25rem;
+        color: var(--container-color);
+    }
+}
+.show-scroll{
+    bottom: 3rem;
+}

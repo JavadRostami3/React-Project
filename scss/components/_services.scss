@@ -1,0 +1,30 @@
+.services {
+    padding-top: 4rem;
+
+    &__container {
+        margin-top: 1rem;
+    }
+
+    &__info {
+        display: grid;
+        row-gap: 1rem;
+        text-align: center;
+        background: var(--container-color);
+        box-shadow: 0px 2px 6px hsla(var(--hue), 100%, 15%, 0.35);
+        text-align: center;
+        padding: 2rem 1.5rem;
+        border-radius: 1rem;
+    }
+
+    &__icon {
+        font-size: 3rem;
+        color: var(--primary-color);
+    }
+}
+
+@media screen and (max-width:576px) {
+    .services__info {
+        margin: 0 3rem;
+    }
+
+}

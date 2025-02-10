@@ -1,0 +1,28 @@
+.app {
+    &__container {
+        gap: 2rem;
+    }
+
+    &__info {
+        text-align: center;
+    }
+
+    &__description {
+        margin-bottom: 1.5rem;
+    }
+
+    &__buttons {
+        display: grid;
+        grid-template-columns: repeat(2, max-content);
+        justify-content: center;
+        gap: 0.5rem;
+    }
+
+    &__icon {
+        font-size: 1rem;
+    }
+
+    span {
+        color: var(--primary-color);
+    }
+}

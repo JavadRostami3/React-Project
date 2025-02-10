@@ -1,0 +1,21 @@
+.home {
+    padding-top: 5rem;
+
+    &__container {
+        row-gap: 2.5rem;
+    }
+
+    &__titles {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+    }
+
+    &__description {
+        margin-bottom: 2rem;
+    }
+}
+
+.span {
+    color: var(--primary-color) !important;
+}
