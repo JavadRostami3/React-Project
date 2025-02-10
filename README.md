@@ -1,7 +1,3 @@
-Here's an English version of the README formatted for `.md` file:
-
----
-
 # React Project Rewrite
 
 This project was originally written using **SASS** and **JavaScript**. It has now been rewritten using **React**, where each section of the site is broken down into individual **components** found in the `components` folder. The project uses **Vite** for development, and you can run it locally using the command `npm run dev`. 
