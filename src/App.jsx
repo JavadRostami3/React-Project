@@ -8,7 +8,6 @@ import Contact from "./components/main/Contact"
 import Footer from "./components/footer/Footer"
 import Navigation from "./components/scripts/Navigation"
 import ScrollEffects from "./components/scripts/ScrollEffect"
-import ThemeToggle from "./components/scripts/ThemeToggle"
 
 function App() {
   return (
@@ -16,7 +15,6 @@ function App() {
     <Header />
     <Navigation />
     <ScrollEffects />
-    <ThemeToggle />
     <Home />
     <About />
     <Support />

@@ -1,3 +1,5 @@
+import ThemeToggle from "../scripts/ThemeToggle";
+
 const navLinks = [
     { id: "home", label: "صفحه اصلی" },
     { id: "about", label: "درباره ما" },
@@ -22,9 +24,7 @@ const navLinks = [
             </ul>
           </div>
   
-          <div className="nav__toggle" id="nav-toggle">
-            <i className="bi bi-list-nested"></i>
-          </div>
+          <ThemeToggle />
   
           <a className="button button__header" href="#">لورم ایپسوم</a>
         </nav>
